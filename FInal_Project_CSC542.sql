@@ -65,7 +65,52 @@ INSERT INTO department VALUES
 
 INSERT INTO instructor VALUES
 (1, 'Carin Appleget', 'Education', 1),
-(2, 'April Buschelman', 'Education', 1);
+(2, 'April Buschelman', 'Education', 1),
+(3, 'Tim Cook', 'Education', 1),
+(4, 'Beverly Doyle', 'Education', 1),
+(5, 'Max Engel', 'Education', 1),
+(6, 'Ronald Fussell', 'Education', 1),
+(7, 'Jean Hearn', 'Education', 1),
+(8, 'Richard Hobbs', 'Education', 1),
+(9, 'Jiwon Kim', 'Education', 1),
+(10, 'Anne Mausbach', 'Education', 1),
+(11, 'Jan Powers', 'Education', 1),
+(12, 'Thomas Simonds', 'Education', 1),
+(13, 'Samer Al-khateeb', 'Computer Science, Design and Journalism', 2),
+(14, 'Catherin Baker', 'Computer Science, Design and Journalism', 2),
+(15, 'Steven Fernandes', 'Computer Science, Design and Journalism', 2),
+(16, 'Tim Guthrie', 'Computer Science, Design and Journalism', 2),
+(17, 'Bethany Kalk', 'Computer Science, Design and Journalism', 2),
+(18, 'Brian Kokensparger', 'Computer Science, Design and Journalism', 2),
+(19, 'Alexander Myers', 'Computer Science, Design and Journalism', 2),
+(20, 'David Reed' , 'Computer Science, Design and Journalism', 2),
+(21, 'Peggy Rupprecht', 'Computer Science, Design and Journalism', 2),
+(22, 'Carol Zuegner', 'Computer Science, Design and Journalism', 2),
+(23, 'Leland Barker', 'Exercise Science and Pre-Health Professions', 3),
+(24, 'Eric Bredahl', 'Exercise Science and Pre-Health Professions', 3),
+(25, 'Mary Conway', 'Exercise Science and Pre-Health Professions', 3),
+(26, 'Meghan Schlattmann', 'Exercise Science and Pre-Health Professions', 3),
+(27, 'Joan Eckerson', 'Exercise Science and Pre-Health Professions', 3),
+(28, 'Kelley Hammond', 'Exercise Science and Pre-Health Professions', 3),
+(29, 'Dimitrios Katsavelis', 'Exercise Science and Pre-Health Professions', 3),
+(30, 'Patrick Lambert', 'Exercise Science and Pre-Health Professions', 3),
+(31, 'Mitchel Magrini', 'Exercise Science and Pre-Health Professions', 3),
+(32, 'Geri Moore', 'Exercise Science and Pre-Health Professions', 3),
+(33, 'Abbey Rieber', 'Exercise Science and Pre-Health Professions', 3),
+(34, 'Jacob Siedlik', 'Exercise Science and Pre-Health Professions', 3),
+(35, 'Jennifer Yee', 'Exercise Science and Pre-Health Professions', 3),
+(36, 'Littleton Alston', 'Fine and Performing Arts', 4);
+
+
+
+
+
+
+
+
+
+
+
 
 SELECT *
 FROM instructor
