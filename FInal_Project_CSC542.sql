@@ -1,8 +1,8 @@
 -- create the database
-DROP DATABASE IF EXISTS ap;
-CREATE DATABASE ap;
+DROP DATABASE IF EXISTS test; #originally ap
+CREATE DATABASE test;
 -- select the database
-USE ap;
+USE test;
 
 CREATE TABLE department
 (
@@ -281,29 +281,29 @@ INSERT INTO instructor VALUES
 (206, 'Eric Villa', 'Chemistry and Biochemistry', 15),
 (207, 'James Carlson', 'Mathematics', 16),
 (208, 'Carol Carpenter', 'Mathematics', 16),
-(208, 'Randall Crist', 'Mathematics', 16),
-(209, 'Margaret Doig', 'Mathematics', 16),
-(210, 'Joy Doll', 'Mathematics', 16),
-(211, 'Alison Kleffner', 'Mathematics', 16),
-(212, 'Alexander Kunin', 'Mathematics', 16),
-(213, 'Jean Lilly', 'Mathematics', 16),
-(214, 'Davender Malik', 'Mathematics', 16),
-(215, 'Lance Nielsen', 'Mathematics', 16),
-(216, 'Nathan Pennington', 'Mathematics', 16),
-(217, 'Andrew Baruth', 'Physics', 17),
-(218, 'Gintaras Duda', 'Physics', 17),
-(219, 'Andrew Ekpenyong', 'Physics', 17),
-(220, 'Jack Gabel', 'Physics', 17),
-(221, 'Michael Nichols', 'Physics', 17),
-(222, 'Janet Seger', 'Physics', 17),
-(223, 'David Sidebottom', 'Physics', 17),
-(224, 'Patricia Becerra', 'Physics', 17),
-(225, 'Thomas Wong', 'Physics', 17),
-(226, 'Jonathan Wrubel', 'Physics', 17);
+(209, 'Randall Crist', 'Mathematics', 16),
+(210, 'Margaret Doig', 'Mathematics', 16),
+(211, 'Joy Doll', 'Mathematics', 16),
+(212, 'Alison Kleffner', 'Mathematics', 16),
+(213, 'Alexander Kunin', 'Mathematics', 16),
+(214, 'Jean Lilly', 'Mathematics', 16),
+(215, 'Davender Malik', 'Mathematics', 16),
+(216, 'Lance Nielsen', 'Mathematics', 16),
+(217, 'Nathan Pennington', 'Mathematics', 16),
+(218, 'Andrew Baruth', 'Physics', 17),
+(219, 'Gintaras Duda', 'Physics', 17),
+(220, 'Andrew Ekpenyong', 'Physics', 17),
+(221, 'Jack Gabel', 'Physics', 17),
+(222, 'Michael Nichols', 'Physics', 17),
+(223, 'Janet Seger', 'Physics', 17),
+(224, 'David Sidebottom', 'Physics', 17),
+(225, 'Patricia Becerra', 'Physics', 17),
+(226, 'Thomas Wong', 'Physics', 17),
+(227, 'Jonathan Wrubel', 'Physics', 17);
 
 
 INSERT INTO student VALUES
-	(1, 'John Doe', 2, 'Computer Science', NULL, 1),
+(1, 'John Doe', 2, 'Computer Science', NULL, 1),
 (2, 'Jane Smith', 3, 'Electrical Engineering', 'Physics', 2),
 (3, 'Alex Johnson', 4, 'Mechanical Engineering', 'Chemistry', 3),
 (4, 'Emily Davis', 1, 'Biology', 'English Literature', 4),
@@ -355,7 +355,7 @@ INSERT INTO student VALUES
 (50, 'Alexander Myers', 4, 'Fine Arts', NULL, 4), 
 (51, 'Livie Hiltrud', 1, 'Communication Studies', NULL, 10),
 (52, 'Mayson Helene', 2, 'Communication Studies', NULL, 10),
-(53, 'Miron Rene', 4, 'Biology' 'Psychological Sciences', 14),
+(53, 'Miron Rene', 4, 'Biology' 'Psychological Sciences', NULL, 14),
 (54, 'Asta Shaban', 4, 'Political Science and International Relations', NULL, 12),
 (55, 'Joukahainen Ramakant', 1, 'Physics', NULL, 17),
 (56, 'Joukahainen Ramakant', 2, 'Communication Studies', NULL, 10),
@@ -404,7 +404,27 @@ INSERT INTO student VALUES
 (99, 'Philippos Vidya', 1, 'Biology', NULL, 4),
 (100, 'Else Carina', 1, 'Mathmatics', 'Fine Arts', 16);
 
-SELECT *
-FROM student
-WHERE major = 'Computer Science'
+#coruses:
 
+
+#quieries portion 
+SELECT COUNT(*) FROM course;
+
+#ex (Remove later):
+SELECT *
+FROM instructor
+WHERE dept_name = 'Biology';
+
+#7 quieries
+#Find the number of students who are double majoring but Comp sci is the 1st major
+SELECT *
+FROM student 
+WHERE 
+
+#Compare the # of faculty in the Hitchcock versus Creighton hall
+
+#Select the total # of freshman against seniors in the comp sci course, then add the senior/junior students who still
+#need to take courses
+#Figure out this
+SELECT name, depID, COUNT(*) AS year_set
+FROM student;
