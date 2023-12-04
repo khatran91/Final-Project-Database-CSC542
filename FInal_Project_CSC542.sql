@@ -405,7 +405,71 @@ INSERT INTO student VALUES
 (100, 'Else Carina', 1, 'Mathmatics', 'Fine Arts', 16);
 
 #coruses:
+INSERT INTO course VALUES
+#CompSci
+(121, 'Computers and Scientific Think', '10704'), #Figure out if CRN counts for the instructor ID
+(221, 'Intro to Programming', ''),
+(222, 'Object-Oriented Programming', ''),
+(321, 'Data Structures', ''),
+(414, 'Algorithm Design and Analysis', ''),
+(426, 'Data Visualization', ''),
+(444, 'Human Computer Interaction', ''),
+(581, 'Mobile App Development', ''),
+(599, 'Senior Capstone', ''),
+#Education
+(102, ' Decision Making Strategies', ''),
+(131, 'Literature For Children', ''),
+(170, 'Diversity & Justice-Education', ''),
+(210, 'Child & Adolescent Development', ''),
+(315, 'World Geography', ''),
+(442, 'Spec Methods: Teaching of Jour', ''),
+(470, 'Poverty in America', ''),
+(507, 'Psychology Of Learning', ''),
+(510, 'Growth & Development', ''),
+(692, 'Cultural Issues In Education', ''),
+#Exercise Science
+(111, 'Fund of Human Anatomy', ''),
+(151, 'Beginning Tennis', ''),
+(152, 'Intermediate Tennis', ''),
+(195, 'Intro To Athletic Training', ''),
+(240, 'Found of Fitness & Wellness', ''),
+(306, 'Therapeutic Exercise', ''),
+(331, 'Human Anatomy', ''),
+(489, 'Lab Methods & Procedures', ''),
+(492, 'Exercise Science Internship', ''),
+(495, 'Directed Independent Study', ''),
+#fine arts (Could only find these 2 on degreeworks)
+(101, 'Scheerer Scholars in Arts Sem', ''),
+(358, 'Business of the Arts', ''),
 
+#History
+(101, 'The Modern Western World', ''),
+(106, 'The African World', ''),
+(107, 'The Middle Eastern World', ''),
+(272, 'Global Persp:Europe & World', ''),
+(279, 'Medieval Encounters', ''),
+(282, 'Reacting to the Past', ''), 
+(316, 'Intro to Digital Humanities', ''),
+(352, 'Puerto Rico and the U.S.', ''),
+(367, 'The Afro-American Experience', ''),
+(400, 'History, Lit, Envrnmntl Crisis', ''),
+(402, 'History of Disability', ''),
+(488, 'Global Environmental History', ''),
+(565, ' The United States and Canada', '')
+
+
+
+
+#DELTE THIS IS JUST SO I DON'T HAVE TO SCROLL UP AND DOWN CONSTANTLY
+CREATE TABLE course
+(,
+fine / performing arts, english, modern langague / literature
+philosophy, theologoy, communication studies, cultural&social studies,
+political science/international relations, psychological science, biology, chem/biochemistry, mathmatics, physics
+courseID 		INT 		PRIMARY KEY   	AUTO_INCREMENT,
+courseNum 		INT 		NOT NULL,
+instructorID 	INT 		NOT NULL
+#DELETE AFTER FINISHED
 
 #quieries portion 
 SELECT COUNT(*) FROM course;
@@ -416,15 +480,25 @@ FROM instructor
 WHERE dept_name = 'Biology';
 
 #7 quieries
-#Find the number of students who are double majoring but Comp sci is the 1st major
-SELECT *
-FROM student 
-WHERE 
+#Find the number of students who are double majoring but Comp sci is the 1st major (OLD)
+#^ can't do cause that requires changing the data to add another statement for majors (or I'm missing something)
+# Find the # of students who have a minor but Comp Sci is their main major
+SELECT stuID, SUM(stuID) AS total, stuID.major, stuID.minor
+FROM student s JOIN major m1
+	ON s.depID = m1.depID JOIN minor m2 
+	ON m2.depID = m1.depID
+WHERE major_name = 'Computer Science' 
+HAVING stuID.minor;
 
 #Compare the # of faculty in the Hitchcock versus Creighton hall
+SELECT instructorID, instructorID.dept_name, instructorID.depID,
+FROM instructor i JOIN department d 
+	ON 
 
 #Select the total # of freshman against seniors in the comp sci course, then add the senior/junior students who still
 #need to take courses
 #Figure out this
-SELECT name, depID, COUNT(*) AS year_set
+SELECT StuID.name, StuID.depID, COUNT(*) AS year_set #<-- DO I need this?
 FROM student;
+WHERE stuID.year = 1 AND stuID.year = 4
+# ^ add more to this, see if I can add the later content to it
