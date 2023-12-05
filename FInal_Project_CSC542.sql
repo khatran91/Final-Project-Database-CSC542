@@ -1,8 +1,8 @@
 -- create the database
-DROP DATABASE IF EXISTS test; #originally ap
-CREATE DATABASE test;
+DROP DATABASE IF EXISTS ap;
+CREATE DATABASE ap;
 -- select the database
-USE test;
+USE ap;
 
 CREATE TABLE department
 (
@@ -35,15 +35,14 @@ CREATE TABLE major
 (
 majorID 		INT 		PRIMARY KEY		AUTO_INCREMENT,
 major_name 		VARCHAR(50) 		NOT NULL,
-classes 		VARCHAR(50) 		NOT NULL,
-depID			INT 		NOT NULL
+dept_name		VARCHAR(50) 		NOT NULL
 );
 
 CREATE TABLE minor
 (
 minorID 		INT 		PRIMARY KEY		AUTO_INCREMENT,
-classes 		VARCHAR(50) 		NOT NULL,
-depID			INT 		NOT NULL
+minor_name		VARCHAR(50) 		NOT NULL,
+dept_name		VARCHAR(50)		NOT NULL
 );
 
 CREATE TABLE course
@@ -280,26 +279,25 @@ INSERT INTO instructor VALUES
 (205, 'Juliane Strauss-Soukup', 'Chemistry and Biochemistry', 15),
 (206, 'Eric Villa', 'Chemistry and Biochemistry', 15),
 (207, 'James Carlson', 'Mathematics', 16),
-(208, 'Carol Carpenter', 'Mathematics', 16),
-(209, 'Randall Crist', 'Mathematics', 16),
-(210, 'Margaret Doig', 'Mathematics', 16),
-(211, 'Joy Doll', 'Mathematics', 16),
-(212, 'Alison Kleffner', 'Mathematics', 16),
-(213, 'Alexander Kunin', 'Mathematics', 16),
-(214, 'Jean Lilly', 'Mathematics', 16),
-(215, 'Davender Malik', 'Mathematics', 16),
-(216, 'Lance Nielsen', 'Mathematics', 16),
-(217, 'Nathan Pennington', 'Mathematics', 16),
-(218, 'Andrew Baruth', 'Physics', 17),
-(219, 'Gintaras Duda', 'Physics', 17),
-(220, 'Andrew Ekpenyong', 'Physics', 17),
-(221, 'Jack Gabel', 'Physics', 17),
-(222, 'Michael Nichols', 'Physics', 17),
-(223, 'Janet Seger', 'Physics', 17),
-(224, 'David Sidebottom', 'Physics', 17),
-(225, 'Patricia Becerra', 'Physics', 17),
-(226, 'Thomas Wong', 'Physics', 17),
-(227, 'Jonathan Wrubel', 'Physics', 17);
+(208, 'Randall Crist', 'Mathematics', 16),
+(209, 'Margaret Doig', 'Mathematics', 16),
+(210, 'Joy Doll', 'Mathematics', 16),
+(211, 'Alison Kleffner', 'Mathematics', 16),
+(212, 'Alexander Kunin', 'Mathematics', 16),
+(213, 'Jean Lilly', 'Mathematics', 16),
+(214, 'Davender Malik', 'Mathematics', 16),
+(215, 'Lance Nielsen', 'Mathematics', 16),
+(216, 'Nathan Pennington', 'Mathematics', 16),
+(217, 'Andrew Baruth', 'Physics', 17),
+(218, 'Gintaras Duda', 'Physics', 17),
+(219, 'Andrew Ekpenyong', 'Physics', 17),
+(220, 'Jack Gabel', 'Physics', 17),
+(221, 'Michael Nichols', 'Physics', 17),
+(222, 'Janet Seger', 'Physics', 17),
+(223, 'David Sidebottom', 'Physics', 17),
+(224, 'Patricia Becerra', 'Physics', 17),
+(225, 'Thomas Wong', 'Physics', 17),
+(226, 'Jonathan Wrubel', 'Physics', 17);
 
 
 INSERT INTO student VALUES
@@ -404,101 +402,82 @@ INSERT INTO student VALUES
 (99, 'Philippos Vidya', 1, 'Biology', NULL, 4),
 (100, 'Else Carina', 1, 'Mathmatics', 'Fine Arts', 16);
 
-#coruses:
-INSERT INTO course VALUES
-#CompSci
-(121, 'Computers and Scientific Think', '10704'), #Figure out if CRN counts for the instructor ID
-(221, 'Intro to Programming', ''),
-(222, 'Object-Oriented Programming', ''),
-(321, 'Data Structures', ''),
-(414, 'Algorithm Design and Analysis', ''),
-(426, 'Data Visualization', ''),
-(444, 'Human Computer Interaction', ''),
-(581, 'Mobile App Development', ''),
-(599, 'Senior Capstone', ''),
-#Education
-(102, ' Decision Making Strategies', ''),
-(131, 'Literature For Children', ''),
-(170, 'Diversity & Justice-Education', ''),
-(210, 'Child & Adolescent Development', ''),
-(315, 'World Geography', ''),
-(442, 'Spec Methods: Teaching of Jour', ''),
-(470, 'Poverty in America', ''),
-(507, 'Psychology Of Learning', ''),
-(510, 'Growth & Development', ''),
-(692, 'Cultural Issues In Education', ''),
-#Exercise Science
-(111, 'Fund of Human Anatomy', ''),
-(151, 'Beginning Tennis', ''),
-(152, 'Intermediate Tennis', ''),
-(195, 'Intro To Athletic Training', ''),
-(240, 'Found of Fitness & Wellness', ''),
-(306, 'Therapeutic Exercise', ''),
-(331, 'Human Anatomy', ''),
-(489, 'Lab Methods & Procedures', ''),
-(492, 'Exercise Science Internship', ''),
-(495, 'Directed Independent Study', ''),
-#fine arts (Could only find these 2 on degreeworks)
-(101, 'Scheerer Scholars in Arts Sem', ''),
-(358, 'Business of the Arts', ''),
+INSERT INTO major VALUES
+(1, 'Elementary Education', 'Education'),
+(2, 'Secondary Education', 'Education'),
+(3, 'Early Childhood Education', 'Education'),
+(4, 'Computer Science', 'Computer Science, Design and Journalism'),
+(5, 'Creative Writing', 'Computer Science, Design and Journalism'),
+(6, 'Data Science', 'Computer Science, Design and Journalism'),
+(7, 'Graphic Design and Film', 'Computer Science, Design and Journalism'),
+(8, 'Journalism', 'Computer Science, Design and Journalism'),
+(9, 'Applied Chemistry', 'Exercise Science and Pre-Health Professions'),
+(10, 'Biochemistry', 'Exercise Science and Pre-Health Professions'),
+(11, 'Biology', 'Exercise Science and Pre-Health Professions'),
+(12, 'Biomedical Physics', 'Exercise Science and Pre-Health Professions'),
+(13, 'Chemistry', 'Exercise Science and Pre-Health Professions'),
+(14, 'Theatre', 'Fine and Performing Arts'),
+(15, 'Exercise Science and Pre-Health Professions Degree', 'Exercise Science and Pre-Health Professions'),
+(16, 'Health Administration and Policy', 'Political Science'),
+(17, 'Neuroscience', 'Exercise Science and Pre-Health Professions'),
+(18, 'Physics', 'Exercise Science and Pre-Health Professions'),
+(19, 'Public Health', 'Political Science'),
+(20, 'Sociology', 'Political Science'),
+(21, 'American Studies', 'History'),
+(22, 'Applied Physics and Engineering', 'Natural Science'),
+(23, 'Arts History', 'History'),
+(24, 'Arts and Science - Law', 'Political Science and International Relations'),
+(25, 'Catholic School Leadership', 'Theology'),
+(26, 'Communication', 'Social Science'),
+(27, 'Mathematics', 'Natural Science'),
+(28, 'Christian Spirituality', 'Theology'),
+(29, 'Classical and Near Eastern Civilizations', 'Cultural and Social Studies'),
+(30, 'Classical Language', 'Modern Language and Literature'),
+(31, 'Criminal Justice', 'Cultural and Social Studies'),
+(32, 'Cultural Anthropology', 'Cultural and Social Studies'),
+(33, 'Economics', 'Social Science'),
+(34, 'English as a Second Language', 'English'),
+(35, 'English Studies', 'English'),
+(36, 'Environmental Science', 'Natural Science'),
+(37, 'French and Francophone Studies', 'History'),
+(38, 'German Studies', 'History'),
+(39, 'History Studies', 'History'),
+(40, 'International Relations', 'Political Science'),
+(41, 'Justice and Society', 'Social Science'),
+(42, 'Philosophy Studies', 'Philosophy');
 
-#History
-(101, 'The Modern Western World', ''),
-(106, 'The African World', ''),
-(107, 'The Middle Eastern World', ''),
-(272, 'Global Persp:Europe & World', ''),
-(279, 'Medieval Encounters', ''),
-(282, 'Reacting to the Past', ''), 
-(316, 'Intro to Digital Humanities', ''),
-(352, 'Puerto Rico and the U.S.', ''),
-(367, 'The Afro-American Experience', ''),
-(400, 'History, Lit, Envrnmntl Crisis', ''),
-(402, 'History of Disability', ''),
-(488, 'Global Environmental History', ''),
-(565, ' The United States and Canada', '')
+INSERT INTO minor VALUES
+(1, 'African American and Black Diasporic Studies', 'History'),
+(2, 'African Studies', 'History'),
+(3, 'Asian Studies', 'History'),
+(4, 'Biology', 'Natural Science'),
+(5, 'Classical and Near Eastern Civilizations', 'Cultural and Social Studies'),
+(6, 'Criminal Justice', 'Cultural and Social Studies'),
+(7, 'Cultural Anthropology', 'Cultural and Social Studies'),
+(8, 'Dance', 'Fine and Performing Arts'),
+(9, 'Digital Humanities', 'Computer Science, Design and Journalism'),
+(10, 'Film Studies', 'Computer Science, Design and Journalism'),
+(11, 'German Studies', 'History'),
+(12, 'Global Health Equity', 'Cultural and Social Studies'),
+(13, 'Health Administration and Policy', 'Political Science'),
+(14, 'Justice and Peace', 'Cultural and Social Studies'),
+(15, 'Latin American Studies', 'History'),
+(16, 'Medical Anthropology', 'Exercise Science and Pre-Health Professions'),
+(17, 'Military Science', 'Military Science'),
+(18, 'Public Health', 'Cultural and Social Studies'),
+(19, 'Sociology', 'Cultural and Social Studies'),
+(20, 'Spanish and Hispanic Studies', 'History'),
+(21, 'Studio Art', 'Fine and Performing Art'),
+(22, 'Theatre', 'Fine and Performaing Art'),
+(23, 'Women and Gender Studies', 'Cultural and Social Studies');
 
 
 
 
-#DELTE THIS IS JUST SO I DON'T HAVE TO SCROLL UP AND DOWN CONSTANTLY
-CREATE TABLE course
-(,
-fine / performing arts, english, modern langague / literature
-philosophy, theologoy, communication studies, cultural&social studies,
-political science/international relations, psychological science, biology, chem/biochemistry, mathmatics, physics
-courseID 		INT 		PRIMARY KEY   	AUTO_INCREMENT,
-courseNum 		INT 		NOT NULL,
-instructorID 	INT 		NOT NULL
-#DELETE AFTER FINISHED
 
-#quieries portion 
-SELECT COUNT(*) FROM course;
 
-#ex (Remove later):
-SELECT *
-FROM instructor
-WHERE dept_name = 'Biology';
 
-#7 quieries
-#Find the number of students who are double majoring but Comp sci is the 1st major (OLD)
-#^ can't do cause that requires changing the data to add another statement for majors (or I'm missing something)
-# Find the # of students who have a minor but Comp Sci is their main major
-SELECT stuID, SUM(stuID) AS total, stuID.major, stuID.minor
-FROM student s JOIN major m1
-	ON s.depID = m1.depID JOIN minor m2 
-	ON m2.depID = m1.depID
-WHERE major_name = 'Computer Science' 
-HAVING stuID.minor;
 
-#Compare the # of faculty in the Hitchcock versus Creighton hall
-SELECT instructorID, instructorID.dept_name, instructorID.depID,
-FROM instructor i JOIN department d 
-	ON 
 
-#Select the total # of freshman against seniors in the comp sci course, then add the senior/junior students who still
-#need to take courses
-#Figure out this
-SELECT StuID.name, StuID.depID, COUNT(*) AS year_set #<-- DO I need this?
-FROM student;
-WHERE stuID.year = 1 AND stuID.year = 4
-# ^ add more to this, see if I can add the later content to it
+
+
