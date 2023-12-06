@@ -1,8 +1,8 @@
 -- create the database
-DROP DATABASE IF EXISTS test;
-CREATE DATABASE test;
+DROP DATABASE IF EXISTS uni;
+CREATE DATABASE uni;
 -- select the database
-USE test;
+USE uni;
 
 CREATE TABLE department
 (
