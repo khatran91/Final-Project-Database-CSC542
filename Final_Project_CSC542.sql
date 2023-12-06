@@ -541,7 +541,7 @@ INSERT INTO course VALUES
 (160, 'Trauma in Literature', '11161'),
 (161, 'American Prisons', '11162'),
 #Modern Languages 
-(162, 'Beginning Russian I' '11163'),
+(162, 'Beginning Russian I', '11163'),
 (163, 'Beginning Spanish Daily Life I' ,'11164'),
 (164, ' Begin Japanese Daily Life II', '11165'),
 (165, 'Intensive Beginning French', '11166'),
@@ -623,7 +623,7 @@ INSERT INTO course VALUES
 (236, 'Drugs and Behavior', '11236'),
 #Biology
 (237, 'Biotechnology and Society', '11237'),
-(237, 'Human Biology', '11238'),
+(238, 'Human Biology', '11238'),
 (239, 'Fund Ecolgicl Conserv & Restor', '11239'),
 (240, 'Biostatistics', '11240'),
 (241, 'Directed Research', '11241'),
@@ -667,6 +667,26 @@ INSERT INTO course VALUES
 (277, 'Project Physics Lab I', '11276'),
 (278, 'Project Physics Lab II', '11277'),
 (279, 'Quantum Mechanics', '11278');
+
+#Database Content:
+SELECT * 
+FROM department;
+
+SELECT * 
+FROM instructor;
+
+SELECT * 
+FROM student;
+
+SELECT * 
+FROM major;
+
+SELECT * 
+FROM minor;
+
+SELECT * 
+FROM course;
+
 
 #Quieries
 #students and their majors #1
@@ -728,7 +748,7 @@ JOIN major m ON s.major = m.major_name
 JOIN instructor i ON m.dept_name = i.dept_name
 WHERE i.name = 'Samer Al-khateeb';
 
-#Deparments that have more than 15 instructors #10
+#Departments that have more than 15 instructors #10
 SELECT d.dept_name, COUNT(*) AS instructor_count
 FROM department d
 JOIN instructor i ON d.depID = i.depID
