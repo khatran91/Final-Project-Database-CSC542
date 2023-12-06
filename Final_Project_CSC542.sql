@@ -668,28 +668,29 @@ INSERT INTO course VALUES
 (278, 'Project Physics Lab II', '11277'),
 (279, 'Quantum Mechanics', '11278');
 
-#students and their majors
+#Quieries
+#students and their majors #1
 SELECT student.name, student.major
 FROM student
 LEFT JOIN major ON student.major = major.majorID;
 
-#number of students in each department
+#number of students in each department #2
 SELECT department.dept_name, COUNT(student.stuID) AS student_count
 FROM department
 LEFT JOIN student ON department.depID = student.depID
 GROUP BY department.dept_name;
 
-#student who have declared a minor
+#student who have declared a minor #3
 SELECT student.name, student.minor
 FROM student
 WHERE student.minor IS NOT NULL;
 
-#students and their advisor's name
+#students and their advisor's name #4
 SELECT student.name AS student_name, instructor.name AS advisor_name
 FROM student
 LEFT JOIN instructor ON student.depID = instructor.instructorID;
 
-#Highest average number of students per year in a department
+#Highest average number of students per year in a department #5
 SELECT d.dept_name,
        AVG(s.stuID) AS avg_students_per_year
 FROM department d
@@ -698,7 +699,7 @@ GROUP BY d.dept_name
 ORDER BY avg_students_per_year DESC
 LIMIT 1;
 
-#Lowest average number of students per year in a department
+#Lowest average number of students per year in a department #6
 SELECT d.dept_name,
        AVG(s.stuID) AS avg_students_per_year
 FROM department d
@@ -707,12 +708,12 @@ GROUP BY d.dept_name
 ORDER BY avg_students_per_year ASC
 LIMIT 1;
 
-#Students who have same major and same year
+#Students who have same major and same year #7
 SELECT s1.name AS student1, s2.name AS student2, s1.major, s1.year
 FROM student s1
 JOIN student s2 ON s1.major = s2.major AND s1.year = s2.year AND s1.stuID < s2.stuID;
 
-#Department with the least number of students
+#Department with the least number of students #8
 SELECT d.dept_name, COUNT(s.stuID) AS num_students
 FROM department d
 LEFT JOIN student s ON d.depID = s.depID
@@ -720,14 +721,14 @@ GROUP BY d.dept_name
 ORDER BY num_students ASC
 LIMIT 1;
 
-#Students who are majoring in the same department as Professor Samer (Computer Science)
+#Students who are majoring in the same department as Professor Samer (Computer Science) #9
 SELECT s.name, s.major
 FROM student s
 JOIN major m ON s.major = m.major_name
 JOIN instructor i ON m.dept_name = i.dept_name
 WHERE i.name = 'Samer Al-khateeb';
 
-#Deparments that have more than 15 instructors
+#Deparments that have more than 15 instructors #10
 SELECT d.dept_name, COUNT(*) AS instructor_count
 FROM department d
 JOIN instructor i ON d.depID = i.depID
