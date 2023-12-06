@@ -473,202 +473,287 @@ INSERT INTO minor VALUES
 
 INSERT INTO course VALUES
 #CompSci
-(121, 'Computers and Scientific Think', '10704'), 
-(221, 'Intro to Programming', '11501'),
-(222, 'Object-Oriented Programming', '11502'),
-(321, 'Data Structures', '11503'),
-(414, 'Algorithm Design and Analysis', '11504'),
-(426, 'Data Visualization', '11505'),
-(444, 'Human Computer Interaction', '11506'),
-(581, 'Mobile App Development', '11507'),
-(599, 'Senior Capstone', '11508'),
+(100, 'Computers and Scientific Think', '10704'), 
+(101, 'Intro to Programming', '11501'),
+(102, 'Object-Oriented Programming', '11502'),
+(103, 'Data Structures', '11503'),
+(104, 'Algorithm Design and Analysis', '11504'),
+(105, 'Data Visualization', '11505'),
+(106, 'Human Computer Interaction', '11506'),
+(107, 'Mobile App Development', '11507'),
+(108, 'Senior Capstone', '11508'),
 #Education
-(102, 'Decision Making Strategies', '11111'),
-(131, 'Literature For Children', '11112'),
-(170, 'Diversity & Justice-Education', '11113'),
-(210, 'Child & Adolescent Development', '11114'),
-(315, 'World Geography', '11115'),
-(442, 'Spec Methods: Teaching of Jour', '11116'),
-(470, 'Poverty in America', '11117'),
-(507, 'Psychology Of Learning', '11118'),
-(510, 'Growth & Development', '11119'),
-(692, 'Cultural Issues In Education', '11110'),
+(109, 'Decision Making Strategies', '11111'),
+(110, 'Literature For Children', '11112'),
+(111, 'Diversity & Justice-Education', '11113'),
+(112, 'Child & Adolescent Development', '11114'),
+(113, 'World Geography', '11115'),
+(114, 'Spec Methods: Teaching of Jour', '11116'),
+(115, 'Poverty in America', '11117'),
+(116, 'Psychology Of Learning', '11118'),
+(117, 'Growth & Development', '11119'),
+(118, 'Cultural Issues In Education', '11110'),
 #Exercise Science
-(111, 'Fund of Human Anatomy', '11120'),
-(151, 'Beginning Tennis', '11121'),
-(152, 'Intermediate Tennis', '11122'),
-(195, 'Intro To Athletic Training', '11123'),
-(240, 'Found of Fitness & Wellness', '11124'),
-(306, 'Therapeutic Exercise', '11125'),
-(331, 'Human Anatomy', '11126'),
-(489, 'Lab Methods & Procedures', '11127'),
-(492, 'Exercise Science Internship', '11128'),
-(495, 'Directed Independent Study', '11129'),
+(119, 'Fund of Human Anatomy', '11120'),
+(120, 'Beginning Tennis', '11121'),
+(121, 'Intermediate Tennis', '11122'),
+(122, 'Intro To Athletic Training', '11123'),
+(123, 'Found of Fitness & Wellness', '11124'),
+(124, 'Therapeutic Exercise', '11125'),
+(125, 'Human Anatomy', '11126'),
+(126, 'Lab Methods & Procedures', '11127'),
+(127, 'Exercise Science Internship', '11128'),
+(128, 'Directed Independent Study', '11129'),
 #fine arts
-(101, 'Scheerer Scholars in Arts Sem', '11130'),
-(105, 'Drawing Fundamentals', '11131'),
-(215, 'Sculpture II', '11132'),
-(305, 'Arts and Civic Engagement', '11133'),
-(331, 'Painting I', '11134'),
-(332, 'Painting II', '11135'),
-(358, 'Business of the Arts', '11136'),
-(374, 'Photographic Lighting', '11137'),
+(129, 'Scheerer Scholars in Arts Sem', '11130'),
+(130, 'Drawing Fundamentals', '11131'),
+(131, 'Sculpture II', '11132'),
+(132, 'Arts and Civic Engagement', '11133'),
+(133, 'Painting I', '11134'),
+(134, 'Painting II', '11135'),
+(135, 'Business of the Arts', '11136'),
+(136, 'Photographic Lighting', '11137'),
 #History
-(103, 'The Modern Western World', '11138'),
-(106, 'The African World', '11139'),
-(107, 'The Middle Eastern World', '11140'),
-(272, 'Global Persp:Europe & World', '11141'),
-(279, 'Medieval Encounters', '11142'),
-(282, 'Reacting to the Past', '11143'), 
-(316, 'Intro to Digital Humanities', '11144'),
-(352, 'Puerto Rico and the U.S.', '11145'),
-(367, 'The Afro-American Experience', '11146'),
-(400, 'History, Lit, Envrnmntl Crisis', '11147'),
-(402, 'History of Disability', '11148'),
-(488, 'Global Environmental History', '11149'),
-(565, 'The United States and Canada', '11150'),
+(137, 'The Modern Western World', '11138'),
+(138, 'The African World', '11139'),
+(139, 'The Middle Eastern World', '11140'),
+(140, 'Global Persp:Europe & World', '11141'),
+(141, 'Medieval Encounters', '11142'),
+(142, 'Reacting to the Past', '11143'), 
+(143, 'Intro to Digital Humanities', '11144'),
+(144, 'Puerto Rico and the U.S.', '11145'),
+(145, 'The Afro-American Experience', '11146'),
+(146, 'History, Lit, Envrnmntl Crisis', '11147'),
+(147, 'History of Disability', '11148'),
+(148, 'Global Environmental History', '11149'),
+(149, 'The United States and Canada', '11150')
 #English
-(100, 'Introduction To Composition', '11151'),
-(130, 'Creative Writing', '11152'),
-(150, 'Cont Comp:College Composition', '11153'),
-(172, 'Race and Identity', '11154'),
-(176, 'Creating Communities', '11155'),
-(221, 'Global Literatures', '11156'),
-(222, 'Emotions in Literature & Life', '11157'),
-(228, 'The City in Literature', '11158'),
-(251, 'Advanced Composition', '11159'),
-(300, 'Intro To Creative Writing', '11160'),
-(441, 'Trauma in Literature', '11161'),
-(489, 'American Prisons', '11162'),
+(150, 'Introduction To Composition', '11151'),
+(151, 'Creative Writing', '11152'),
+(152, 'Cont Comp:College Composition', '11153'),
+(153, 'Race and Identity', '11154'),
+(154, 'Creating Communities', '11155'),
+(155, 'Global Literatures', '11156'),
+(156, 'Emotions in Literature & Life', '11157'),
+(157, 'The City in Literature', '11158'),
+(158, 'Advanced Composition', '11159'),
+(159, 'Intro To Creative Writing', '11160'),
+(160, 'Trauma in Literature', '11161'),
+(161, 'American Prisons', '11162');
 #Modern Languages 
-(101, 'Beginning Russian I' '11163'),
-(111, 'Beginning Spanish Daily Life I' ,'11164'),
-(112, ' Begin Japanese Daily Life II', '11165'),
-(115, 'Intensive Beginning French', '11166'),
-(201, 'Intermediate Russian II', '11167'),
-(203, 'Intermediate Hispanic Culture', '11168'),
-(225, 'Intermediate French', '11169'),
-(311, 'Advanced Japanese I', '11170'),
-(312, 'Advanced Japanese II', '11171'),
-(316, 'Spanish Immersion I', '11172'),
-(317, 'Spanish Immersion II', '11173'),
-(355, 'French Conversation', '11174'),
-(410, 'Introduction to Translation', '11175'),
+(162, 'Beginning Russian I' '11163'),
+(163, 'Beginning Spanish Daily Life I' ,'11164'),
+(164, ' Begin Japanese Daily Life II', '11165'),
+(165, 'Intensive Beginning French', '11166'),
+(166, 'Intermediate Russian II', '11167'),
+(167, 'Intermediate Hispanic Culture', '11168'),
+(168, 'Intermediate French', '11169'),
+(169, 'Advanced Japanese I', '11170'),
+(170, 'Advanced Japanese II', '11171'),
+(171, 'Spanish Immersion I', '11172'),
+(172, 'Spanish Immersion II', '11173'),
+(173, 'French Conversation', '11174'),
+(174, 'Introduction to Translation', '11175'),
 #Philosophy
-(107, 'Crit & Hist Intro Philosophy', '11176'),
-(112, 'PhlIdeas:Found of the Sciences', '11177'),
-(147, 'Intro To Critical Thinking', '11178'),
-(201, 'Introduction To Logic', '11179'),
-(270, 'Philosophical Ethics', '11180'),
-(295, 'Philosophy Internship', '11181'),
-(331, 'Moral Philosophy', '11182'),
-(332, 'World Philosophy', '11183'),
-(368, 'Moral Psychology', '11184'),
-(422, 'Aesthetics', '11185'),
-(467, 'Existentialism', '11186'),
+(175, 'Crit & Hist Intro Philosophy', '11176'),
+(176, 'PhlIdeas:Found of the Sciences', '11177'),
+(177, 'Intro To Critical Thinking', '11178'),
+(178, 'Introduction To Logic', '11179'),
+(179, 'Philosophical Ethics', '11180'),
+(180, 'Philosophy Internship', '11181'),
+(181, 'Moral Philosophy', '11182'),
+(182, 'World Philosophy', '11183'),
+(183, 'Moral Psychology', '11184'),
+(184, 'Aesthetics', '11185'),
+(185, 'Existentialism', '11186'),
 #Theology
-(110, 'Christian Tradition-Then & Now', '11187'),
-(112, 'Christian Trad:Global Visions', '11188'),
-(115, 'Christian Trdtn Women''s Voices', '11189'),
-(176, 'Sport and Spirituality', '11190'),
-(202, 'Creation & Environment', '11191'),
-(207, 'Reading New Testament', '11192'),
-(215, 'Ancestors and Heroes', '11193'),
-(235, 'Biblical Trad:Sickness-Healing', '11194'),
-(331, 'Jesus Christ: Liberator', '11195'),
-(420, 'Science and Religion', '11196'),
+(186, 'Christian Tradition-Then & Now', '11187'),
+(187, 'Christian Trad:Global Visions', '11188'),
+(188, 'Christian Trdtn Women''s Voices', '11189'),
+(189, 'Sport and Spirituality', '11190'),
+(190, 'Creation & Environment', '11191'),
+(191, 'Reading New Testament', '11192'),
+(192, 'Ancestors and Heroes', '11193'),
+(193, 'Biblical Trad:Sickness-Healing', '11194'),
+(194, 'Jesus Christ: Liberator', '11195'),
+(195, 'Science and Religion', '11196'),
 #Communication Studies
-(101, 'Digital Communication Lab', '11197'),
-(152, 'Civic Engagement', '11198'),
-(170, 'Communication across Cultures', '11199'),
-(173, 'Health, Communication, & Media', '11200'),
+(196, 'Digital Communication Lab', '11197'),
+(197, 'Civic Engagement', '11198'),
+(198, 'Communication across Cultures', '11199'),
+(199, 'Health, Communication, & Media', '11200'),
 (201, 'Intro to Forensics', '11201'),
-(244, 'Cross-Cultural Communication', '11202'),
-(301, 'Intermediate Forensics', '11203'),
-(317, 'Studies in Argument and Debate', '11204'),
-(363, 'Family Communication', '11205'),
-(559, 'Environmental Communication', '11206'),
+(202, 'Cross-Cultural Communication', '11202'),
+(203, 'Intermediate Forensics', '11203'),
+(204, 'Studies in Argument and Debate', '11204'),
+(205, 'Family Communication', '11205'),
+(206, 'Environmental Communication', '11206'),
 #Cultural/Social Studies 
-(111, 'Intro:Human & Cultural Divrsty', '11207'),
-(175, 'Nutritional Anthropology', '11208'),
-(178, 'Global Citizenship', '11209'),
-(201, 'Intro to Crimnl Justice Systm', '11210'),
-(225, 'Fundamntls Forensic Anthroplgy', '11211'),
-(244, 'Cross-Cultural Communication', '11212'),
-(299, 'Addictions', '11213'),
-(302, 'Biological Anthropology', '11214'),
-(399, 'Trauma Care for Whole Person', '11215'),
-(570, 'Intro to Geographic Info Systm', '11216'),
+(207, 'Intro:Human & Cultural Divrsty', '11207'),
+(208, 'Nutritional Anthropology', '11208'),
+(209, 'Global Citizenship', '11209'),
+(210, 'Intro to Crimnl Justice Systm', '11210'),
+(211, 'Fundamntls Forensic Anthroplgy', '11211'),
+(212, 'Cross-Cultural Communication', '11212'),
+(213, 'Addictions', '11213'),
+(214, 'Biological Anthropology', '11214'),
+(215, 'Trauma Care for Whole Person', '11215'),
+(216, 'Intro to Geographic Info Systm', '11216'),
 #Political Science/International Relations
-(105, 'Introduction To World Politics', '11217'),
-(121, 'American Government & Politics', '11218'),
-(235, 'Interest Group Politics', '11219'),
-(314, 'The Politics of Japan', '11220'),
-(320, 'Judicial Process', '11221'),
-(325, 'State and Local Government', '11222'),
-(328, 'Mass Media Amer Politics', '11223'),
-(336, 'Policy Evaluation', '11224'),
-(337, 'Constitutional Law', '11225'),
-(347, 'International Regimes', '11226'),
+(217, 'Introduction To World Politics', '11217'),
+(218, 'American Government & Politics', '11218'),
+(219, 'Interest Group Politics', '11219'),
+(220, 'The Politics of Japan', '11220'),
+(221, 'Judicial Process', '11221'),
+(222, 'State and Local Government', '11222'),
+(223, 'Mass Media Amer Politics', '11223'),
+(224, 'Policy Evaluation', '11224'),
+(225, 'Constitutional Law', '11225'),
+(226, 'International Regimes', '11226'),
 #Psychological Science
-(111, 'Introductory Psychology', '11227'),
-(120, 'General Psychology', '11228'),
-(271, 'Developmental Psychology', '11229'),
-(311, 'Research Methods In Psy', '11230'),
-(313, 'Research Methods&Statistics I', '11231'),
-(344, 'Social Psychology', '11232'),
-(352, 'Health Psychology', '11233'),
-(367, 'Contemporary Trends in Psy', '11234'),
-(423, 'Psychological Assessments', '11235'),
-(481, 'Drugs and Behavior', '11236'),
+(227, 'Introductory Psychology', '11227'),
+(228, 'General Psychology', '11228'),
+(229, 'Developmental Psychology', '11229'),
+(230, 'Research Methods In Psy', '11230'),
+(231, 'Research Methods&Statistics I', '11231'),
+(232, 'Social Psychology', '11232'),
+(233, 'Health Psychology', '11233'),
+(234, 'Contemporary Trends in Psy', '11234'),
+(235, 'Psychological Assessments', '11235'),
+(236, 'Drugs and Behavior', '11236'),
 #Biology
-(150, 'Biotechnology and Society', '11237'),
-(159, 'Human Biology', '11238'),
-(189, 'Fund Ecolgicl Conserv & Restor', '11239'),
-(311, 'Biostatistics', '11240'),
-(297, 'Directed Research', '11241'),
-(317, 'Genetics', '11242'),
-(335, 'Zoology', '11243'),
-(341, 'Botany', '11244'),
-(350, 'Funds of Microbiology', '11245'),
-(445, 'Environmental Physiology', '11246'),
-(581, 'Evolution', '11247'),
+(237, 'Biotechnology and Society', '11237'),
+(237, 'Human Biology', '11238'),
+(239, 'Fund Ecolgicl Conserv & Restor', '11239'),
+(240, 'Biostatistics', '11240'),
+(241, 'Directed Research', '11241'),
+(242, 'Genetics', '11242'),
+(243, 'Zoology', '11243'),
+(244, 'Botany', '11244'),
+(245, 'Funds of Microbiology', '11245'),
+(246, 'Environmental Physiology', '11246'),
+(247, 'Evolution', '11247'),
 #Chem/Biochemistry
-(105, 'Introductory Chemistry', '11248'),
-(111, 'Fundamentals of General Chem', '11249'),
-(112, 'Fund Of Biological Chemistry', '11250'),
-(203, 'General Chemistry I', '11251'),
-(204, 'General Chemistry II', '11252'),
-(286, 'Chem & Statistical Analys Lab', '11253'),
-(321, 'Organic Chemistry I', '11254'),
-(323, 'Organic Chemistry II', '11255'),
-(331, 'Concepts of Physical Chemistry', '11256'),
-(392, 'Forensic Chemistry', '11257'),
-(446, 'Statistical Mechanics', '11258'),
+(248, 'Introductory Chemistry', '11248'),
+(249, 'Fundamentals of General Chem', '11249'),
+(250, 'Fund Of Biological Chemistry', '11250'),
+(251, 'General Chemistry I', '11251'),
+(252, 'General Chemistry II', '11252'),
+(253, 'Chem & Statistical Analys Lab', '11253'),
+(254, 'Organic Chemistry I', '11254'),
+(255, 'Organic Chemistry II', '11255'),
+(256, 'Concepts of Physical Chemistry', '11256'),
+(257, 'Forensic Chemistry', '11257'),
+(258, 'Statistical Mechanics', '11258'),
 #Mathmatics
-(103, 'Intermediate Algebra', '11259'),
-(125, 'Practical Math', '11260'),
-(139, 'Precalculus', '11261'),
-(141, 'Applied Calculus', '11262'),
-(201, 'Applied Mathematics', '11263'),
-(205, 'Mathematics for Modern World', '11264'),
-(245, 'Calculus I', '11265'),
-(246, 'Calculus II', '11266'),
-(310, 'Intro to Abstract Mathematics', '11267'),
-(365, 'Introduction to Data Science', '11268'),
+(259, 'Intermediate Algebra', '11259'),
+(260, 'Practical Math', '11260'),
+(261, 'Precalculus', '11261'),
+(262, 'Applied Calculus', '11262'),
+(263, 'Applied Mathematics', '11263'),
+(264, 'Mathematics for Modern World', '11264'),
+(265, 'Calculus I', '11265'),
+(266, 'Calculus II', '11266'),
+(267, 'Intro to Abstract Mathematics', '11267'),
+(268, 'Introduction to Data Science', '11268'),
 #Physics
-(107, 'Introductory Astronomy', '11269'),
-(125, 'Intro to Earth Systems', '11270'),
-(127, 'Sound And Music', '11271'),
-(152, 'Living in a Material World', '11272'),
-(195, 'Selected Topics In Physics', '11273'),
-(201, 'Gen Physics Life Sciences', '11274'),
-(202, 'Gen Phys for Life Sciences II', '11275'),
-(223, 'Project Physics Lab I', '11276'),
-(224, 'Project Physics Lab II', '11277'),
-(531, 'Quantum Mechanics', '11278');
+(269, 'Introductory Astronomy', '11269'),
+(270, 'Intro to Earth Systems', '11270'),
+(271, 'Sound And Music', '11271'),
+(273, 'Living in a Material World', '11272'),
+(274, 'Selected Topics In Physics', '11273'),
+(275, 'Gen Physics Life Sciences', '11274'),
+(276, 'Gen Phys for Life Sciences II', '11275'),
+(277, 'Project Physics Lab I', '11276'),
+(278, 'Project Physics Lab II', '11277'),
+(279, 'Quantum Mechanics', '11278');
+
+#students and their majors
+SELECT student.name, student.major
+FROM student
+LEFT JOIN major ON student.major = major.majorID;
+
+#number of students in each department
+SELECT department.dept_name, COUNT(student.stuID) AS student_count
+FROM department
+LEFT JOIN student ON department.depID = student.depID
+GROUP BY department.dept_name;
+
+#student who have declared a minor
+SELECT student.name, student.minor
+FROM student
+WHERE student.minor IS NOT NULL;
+
+#students and their advisor's name
+SELECT student.name AS student_name, instructor.name AS advisor_name
+FROM student
+LEFT JOIN instructor ON student.depID = instructor.instructorID;
+
+#Highest average number of students per year in a department
+SELECT d.dept_name,
+       AVG(s.stuID) AS avg_students_per_year
+FROM department d
+JOIN student s ON d.depID = s.depID
+GROUP BY d.dept_name
+ORDER BY avg_students_per_year DESC
+LIMIT 1;
+
+#Lowest average number of students per year in a department
+SELECT d.dept_name,
+       AVG(s.stuID) AS avg_students_per_year
+FROM department d
+JOIN student s ON d.depID = s.depID
+GROUP BY d.dept_name
+ORDER BY avg_students_per_year ASC
+LIMIT 1;
+
+#Students who have same major and same year
+SELECT s1.name AS student1, s2.name AS student2, s1.major, s1.year
+FROM student s1
+JOIN student s2 ON s1.major = s2.major AND s1.year = s2.year AND s1.stuID < s2.stuID;
+
+#Department with the least number of students
+SELECT d.dept_name, COUNT(s.stuID) AS num_students
+FROM department d
+LEFT JOIN student s ON d.depID = s.depID
+GROUP BY d.dept_name
+ORDER BY num_students ASC
+LIMIT 1;
+
+#Students who are majoring in the same department as Professor Samer (Computer Science)
+SELECT s.name, s.major
+FROM student s
+JOIN major m ON s.major = m.major_name
+JOIN instructor i ON m.dept_name = i.dept_name
+WHERE i.name = 'Samer Al-khateeb';
+
+#Deparments that have more than 15 instructors
+SELECT d.dept_name, COUNT(*) AS instructor_count
+FROM department d
+JOIN instructor i ON d.depID = i.depID
+GROUP BY d.depID
+HAVING COUNT(*) > 15;
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
