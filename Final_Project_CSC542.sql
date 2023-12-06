@@ -1,8 +1,8 @@
 -- create the database
-DROP DATABASE IF EXISTS ap;
-CREATE DATABASE ap;
+DROP DATABASE IF EXISTS test;
+CREATE DATABASE test;
 -- select the database
-USE ap;
+USE test;
 
 CREATE TABLE department
 (
@@ -526,7 +526,7 @@ INSERT INTO course VALUES
 (146, 'History, Lit, Envrnmntl Crisis', '11147'),
 (147, 'History of Disability', '11148'),
 (148, 'Global Environmental History', '11149'),
-(149, 'The United States and Canada', '11150')
+(149, 'The United States and Canada', '11150'),
 #English
 (150, 'Introduction To Composition', '11151'),
 (151, 'Creative Writing', '11152'),
@@ -539,7 +539,7 @@ INSERT INTO course VALUES
 (158, 'Advanced Composition', '11159'),
 (159, 'Intro To Creative Writing', '11160'),
 (160, 'Trauma in Literature', '11161'),
-(161, 'American Prisons', '11162');
+(161, 'American Prisons', '11162'),
 #Modern Languages 
 (162, 'Beginning Russian I' '11163'),
 (163, 'Beginning Spanish Daily Life I' ,'11164'),
